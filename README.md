@@ -1,7 +1,7 @@
 # CATopalian JavaScript Filter Functions
 A JavaScript application that teaches how to filter data in many ways.  
 
-If you enjoy my apps and tutorials please consider buying me a coffee at [paypal.me/keystonermarch](https://www.paypal.com/paypalme/keystonermarch)
+If you enjoy my apps and tutorials consider buying me a coffee at [paypal.me/keystonermarch](https://www.paypal.com/paypalme/keystonermarch)
 
 ---
 
