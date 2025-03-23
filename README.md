@@ -1,7 +1,9 @@
 # CATopalian JavaScript Filter Functions
 A JavaScript application that teaches how to filter data in many ways.  
 
-USE APP: https://christopherandrewtopalian.github.io/CATopalian_JavaScript_Filter_Functions/CATopalian_JavaScript_Filter_Functions.html
+USE APP: https://christopherandrewtopalian.github.io/CATopalian_JavaScript_Filter_Functions/CATopalian_JavaScript_Filter_Functions.html  
+
+![screenshot_001](src/media/textures/screenshots/001.PNG)
 
 If you enjoy my apps and tutorials consider buying me a coffee at [paypal.me/keystonermarch](https://www.paypal.com/paypalme/keystonermarch)
 
