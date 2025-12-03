@@ -111,6 +111,12 @@ function makeMenuLeft()
 
     //-//
 
+    let filterByNameLabel = ce('div');
+    filterByNameLabel.textContent = 'filterByName(people, "Melissa")';
+    buttonsContainer.append(filterByNameLabel);
+
+    //-//
+
     // filterByNameButton
     let filterByNameButton = ce('button');
     filterByNameButton.className = 'buttonStyle001';
@@ -137,6 +143,12 @@ function makeMenuLeft()
 
     //-//
 
+    let filterByDateLabel = ce('div');
+    filterByDateLabel.textContent = 'filterByDate(people, "1983/03/05")';
+    buttonsContainer.append(filterByDateLabel);
+
+    //-//
+
     // filterByDateButton
     let filterByDateButton = ce('button');
     filterByDateButton.className = 'buttonStyle001';
@@ -160,6 +172,12 @@ function makeMenuLeft()
     //-//
 
     buttonsContainer.append(ce('hr'));
+
+    //-//
+
+    let filterBeforeDateLabel = ce('div');
+    filterBeforeDateLabel.textContent = 'filterBeforeDate(people, "1982/02/05")';
+    buttonsContainer.append(filterBeforeDateLabel);
 
     //-//
 
