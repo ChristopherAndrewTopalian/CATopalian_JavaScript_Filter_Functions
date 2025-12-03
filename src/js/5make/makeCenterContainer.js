@@ -8,7 +8,7 @@ function makeCenterContainer()
     centerContainer.style.position = 'absolute';
     centerContainer.style.left = gr('leftMenu_buttonsContainer').right + 10;
     centerContainer.style.top = '10px';
-    centerContainer.style.width = '500px';
+    //centerContainer.style.width = '450px';
     centerContainer.style.overflowX = 'scroll';
     ba(centerContainer);
 

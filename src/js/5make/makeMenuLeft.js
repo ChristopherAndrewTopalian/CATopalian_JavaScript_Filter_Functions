@@ -10,6 +10,7 @@ function makeMenuLeft()
     buttonsContainer.style.position = 'fixed';
     buttonsContainer.style.left = '0px';
     buttonsContainer.style.top = '5px';
+    buttonsContainer.style.width = '250px';
     buttonsContainer.style.height = '200px';
     buttonsContainer.style.display = 'flex';
     buttonsContainer.style.flexDirection = 'column';
@@ -284,6 +285,12 @@ function makeMenuLeft()
 
     //-//
 
+    let filterByYearMonthLabel = ce('div');
+    filterByYearMonthLabel.textContent = 'filterByYearMonth(people, "1983/03")';
+    buttonsContainer.append(filterByYearMonthLabel);
+
+    //-//
+
     // filterByYearMonthButton
     let filterByYearMonthButton = ce('button');
     filterByYearMonthButton.className = 'buttonStyle001';
@@ -310,6 +317,12 @@ function makeMenuLeft()
 
     //-//
 
+    let filterByMonthDayLabel = ce('div');
+    filterByMonthDayLabel.textContent = 'filterByMonthDay(people, "03/05")';
+    buttonsContainer.append(filterByMonthDayLabel);
+
+    //-//
+
     // filterByMonthDayButton
     let filterByMonthDayButton = ce('button');
     filterByMonthDayButton.className = 'buttonStyle001';
@@ -333,6 +346,12 @@ function makeMenuLeft()
     //-//
 
     buttonsContainer.append(ce('hr'));
+
+    //-//
+
+    let filterByDateTimeLabel = ce('div');
+    filterByDateTimeLabel.textContent = 'filterByDateTime(people, "1980/03/01 9:30 PM")';
+    buttonsContainer.append(filterByDateTimeLabel);
 
     //-//
 
