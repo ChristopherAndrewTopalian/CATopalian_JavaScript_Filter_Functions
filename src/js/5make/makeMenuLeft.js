@@ -303,7 +303,7 @@ function makeMenuLeft()
     filterByMonthDayButton.className = 'buttonStyle001';
     filterByMonthDayButton.id = nameSpace + 'filterByMonthDayButton';
     filterByMonthDayButton.textContent = 'filterByMonthDay';
-    filterByMonthDayButton.title = 'filterByMonthDay(people, "3", "5")';
+    filterByMonthDayButton.title = 'filterByMonthDay(people, "03/05")';
     filterByMonthDayButton.onmouseover = function()
     {
         hoverSound();
