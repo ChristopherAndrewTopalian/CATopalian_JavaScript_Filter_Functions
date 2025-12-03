@@ -1,5 +1,6 @@
 // showAll.js
 
+// how to manually move data from one list to another
 function showAll(whichArray)
 {
     let result = [];
@@ -8,9 +9,17 @@ function showAll(whichArray)
     {
         result.push(whichArray[z]);
     }
-
     return result;
 }
+
+/*
+// returning the original list without doing any work
+function showAll(whichArray)
+{
+    // the ... spreads the items into a new array instantly
+    return [...whichArray];
+}
+*/
 
 //----//
 

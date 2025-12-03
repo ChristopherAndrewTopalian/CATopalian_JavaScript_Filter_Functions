@@ -17,9 +17,9 @@ function makeInputs()
     */
     inputContainer.style.position = 'fixed';
     inputContainer.style.left = '10px';
-    inputContainer.style.top = ge('resultDiv').getBoundingClientRect().bottom + 10 + 'px';
+    inputContainer.style.top = gr('leftMenu_buttonsContainer').bottom + 10;
     inputContainer.style.maxWidth = '220px';
-    inputContainer.style.height = '100px';
+    inputContainer.style.height = '75px';
     inputContainer.style.overflowY = 'scroll';
     inputContainer.style.zIndex = 2;
     inputContainer.style.padding = 10 + 'px';

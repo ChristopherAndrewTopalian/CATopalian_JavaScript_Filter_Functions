@@ -4,16 +4,20 @@ function filterByMonth(whichArray, whichMonth)
 {
     let result = [];
 
+    // ensure whichMonth is a number (just in case string "5" was passed)
+    let targetMonth = Number(whichMonth);
+
     for (let z = 0; z < whichArray.length; z++)
     {
-        let parts = whichArray[z].date.split('/');
+        let dateObject = new Date(whichArray[z].date);
 
-        if (parts[1] === whichMonth)
+        // .getMonth() returns 0 for Jan, 1 for Feb, etc.
+        // it ignores the Year and the Day.
+        if (dateObject.getMonth() === targetMonth)
         {
             result.push(whichArray[z]);
         }
     }
-
     return result;
 }
 

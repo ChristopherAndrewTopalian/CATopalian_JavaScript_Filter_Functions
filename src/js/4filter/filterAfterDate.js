@@ -3,10 +3,16 @@
 function filterAfterDate(whichArray, whichDate)
 {
     let result = [];
+    
+    // convert the target date
+    let targetTime = new Date(whichDate); 
 
     for (let z = 0; z < whichArray.length; z++)
     {
-        if (whichArray[z].date > whichDate)
+        // convert the current item's date for comparison
+        let itemTime = new Date(whichArray[z].date);
+
+        if (itemTime > targetTime)
         {
             result.push(whichArray[z]);
         }

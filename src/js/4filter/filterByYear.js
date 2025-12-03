@@ -4,14 +4,20 @@ function filterByYear(whichArray, whichYear)
 {
     let result = [];
 
+    // ensure the target is a number (e.g. 2025)
+    let targetYear = Number(whichYear);
+
     for (let z = 0; z < whichArray.length; z++)
     {
-        if (whichArray[z].date.startsWith(whichYear))
+        // convert the string to a real Date object
+        let dateObj = new Date(whichArray[z].date);
+
+        // .getFullYear() returns the 4-digit year (e.g., 2025)
+        if (dateObj.getFullYear() === targetYear)
         {
             result.push(whichArray[z]);
         }
     }
-
     return result;
 }
 

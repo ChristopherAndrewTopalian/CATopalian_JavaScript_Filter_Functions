@@ -5,9 +5,10 @@ function makeCenterContainer()
     // centerContainer
     let centerContainer = ce('div');
     centerContainer.id = 'centerContainer';
-    centerContainer.style.position = 'fixed';
-    centerContainer.style.left = ge('leftMenu_buttonsContainer').style.right + 160 + 'px';
-    centerContainer.style.top = '2px';
+    centerContainer.style.position = 'absolute';
+    centerContainer.style.left = gr('leftMenu_buttonsContainer').right + 10;
+    centerContainer.style.top = '10px';
+    centerContainer.style.width = '500px';
     centerContainer.style.overflowX = 'scroll';
     ba(centerContainer);
 
@@ -26,7 +27,7 @@ function makeCenterContainer()
     let originalArrayDiv = ce('div');
     originalArrayDiv.id = 'originalArrayDiv';
     originalArrayDiv.textContent = JSON.stringify(people);
-    originalArrayDiv.style.width = '450px';
+    //originalArrayDiv.style.width = '550px';
     originalArrayDiv.style.height = '100px';
     originalArrayDiv.style.border = 'solid 1px rgb(100, 100, 100)';
     originalArrayDiv.style.overflowY = 'scroll';
@@ -53,7 +54,7 @@ function makeCenterContainer()
     let resultDiv = ce('div');
     resultDiv.id = 'resultDiv';
     resultDiv.textContent = 'Result';
-    resultDiv.style.width = '450px';
+    //resultDiv.style.width = '550px';
     resultDiv.style.height = '100px';
     resultDiv.style.border = 'solid 1px rgb(100, 100, 100)';
     resultDiv.style.overflowY = 'scroll';

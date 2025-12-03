@@ -4,14 +4,24 @@ function filterByName(whichArray, whichName)
 {
     let result = [];
 
+    // clean the input: remove extra spaces and make lowercase
+    // we do this one time before the loop for speed
+    let targetClean = whichName.trim().toLowerCase();
+
     for (let z = 0; z < whichArray.length; z++)
     {
-        if (whichArray[z].name === whichName)
+        // clean the current item's name
+        // check if name exists to prevent crashing on null/undefined
+        if (whichArray[z].name) 
         {
-            result.push(whichArray[z]);
+            let itemClean = whichArray[z].name.trim().toLowerCase();
+
+            if (itemClean === targetClean)
+            {
+                result.push(whichArray[z]);
+            }
         }
     }
-
     return result;
 }
 

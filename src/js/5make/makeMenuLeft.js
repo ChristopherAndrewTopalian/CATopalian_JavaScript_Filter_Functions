@@ -14,6 +14,8 @@ function makeMenuLeft()
     buttonsContainer.style.display = 'flex';
     buttonsContainer.style.flexDirection = 'column';
     buttonsContainer.style.overflowY = 'scroll';
+    buttonsContainer.style.fontSize = '14px';
+    buttonsContainer.style.padding = '5px 7px';
     ba(buttonsContainer);
 
     //-//
@@ -23,6 +25,10 @@ function makeMenuLeft()
     filtersLabel.style.fontSize = '16px';
     filtersLabel.style.margin = 'auto';
     buttonsContainer.append(filtersLabel);
+
+    //-//
+
+    buttonsContainer.append(ce('hr'));
 
     //-//
 
@@ -48,6 +54,10 @@ function makeMenuLeft()
 
     //-//
 
+    buttonsContainer.append(ce('hr'));
+
+    //-//
+
     // showAllNamesButton
     let showAllNamesButton = ce('button');
     showAllNamesButton.className = 'buttonStyle001';
@@ -67,6 +77,10 @@ function makeMenuLeft()
         ge('resultDiv').innerHTML = JSON.stringify(showAllNames(people));
     };
     buttonsContainer.append(showAllNamesButton);
+
+    //-//
+
+    buttonsContainer.append(ce('hr'));
 
     //-//
 
@@ -92,6 +106,10 @@ function makeMenuLeft()
 
     //-//
 
+    buttonsContainer.append(ce('hr'));
+
+    //-//
+
     // filterByNameButton
     let filterByNameButton = ce('button');
     filterByNameButton.className = 'buttonStyle001';
@@ -111,6 +129,10 @@ function makeMenuLeft()
         ge('resultDiv').innerHTML = JSON.stringify(filterByName(people, 'Melissa'));
     };
     buttonsContainer.append(filterByNameButton);
+
+    //-//
+
+    buttonsContainer.append(ce('hr'));
 
     //-//
 
@@ -136,6 +158,10 @@ function makeMenuLeft()
 
     //-//
 
+    buttonsContainer.append(ce('hr'));
+
+    //-//
+
     // filterBeforeDateButton
     let filterBeforeDateButton = ce('button');
     filterBeforeDateButton.className = 'buttonStyle001';
@@ -155,6 +181,16 @@ function makeMenuLeft()
         ge('resultDiv').innerHTML = JSON.stringify(filterBeforeDate(people, '1982/02/05'));
     };
     buttonsContainer.append(filterBeforeDateButton);
+
+    //-//
+
+    buttonsContainer.append(ce('hr'));
+
+    //-//
+
+    let filterAfterDateLabel = ce('div');
+    filterAfterDateLabel.textContent = 'filterAfterDate(people, "1981/02/05")';
+    buttonsContainer.append(filterAfterDateLabel);
 
     //-//
 
@@ -180,6 +216,10 @@ function makeMenuLeft()
 
     //-//
 
+    buttonsContainer.append(ce('hr'));
+
+    //-//
+
     // filterByYearButton
     let filterByYearButton = ce('button');
     filterByYearButton.className = 'buttonStyle001';
@@ -199,6 +239,10 @@ function makeMenuLeft()
         ge('resultDiv').innerHTML = JSON.stringify(filterByYear(people, '1983'));
     };
     buttonsContainer.append(filterByYearButton);
+
+    //-//
+
+    buttonsContainer.append(ce('hr'));
 
     //-//
 
@@ -224,6 +268,10 @@ function makeMenuLeft()
 
     //-//
 
+    buttonsContainer.append(ce('hr'));
+
+    //-//
+
     // filterByYearMonthButton
     let filterByYearMonthButton = ce('button');
     filterByYearMonthButton.className = 'buttonStyle001';
@@ -246,6 +294,10 @@ function makeMenuLeft()
 
     //-//
 
+    buttonsContainer.append(ce('hr'));
+
+    //-//
+
     // filterByMonthDayButton
     let filterByMonthDayButton = ce('button');
     filterByMonthDayButton.className = 'buttonStyle001';
@@ -265,6 +317,10 @@ function makeMenuLeft()
         ge('resultDiv').innerHTML = JSON.stringify(filterByMonthDay(people, '3', '5'));
     };
     buttonsContainer.append(filterByMonthDayButton);
+
+    //-//
+
+    buttonsContainer.append(ce('hr'));
 
     //-//
 

@@ -4,16 +4,21 @@ function filterByDate(whichArray, whichDate)
 {
     let result = [];
 
+    // convert the target to a "Day String" (e.g., "Tue Dec 02 2025")
+    // this strips out the time component automatically.
+    let targetString = new Date(whichDate).toDateString();
+
     for (let z = 0; z < whichArray.length; z++)
     {
-        let parts = whichArray[z].date.split(' ');
+        // convert the current item to a "Day String" too
+        let itemString = new Date(whichArray[z].date).toDateString();
 
-        if (parts[0] === whichDate)
+        // compare the strings
+        if (itemString === targetString)
         {
             result.push(whichArray[z]);
         }
     }
-
     return result;
 }
 
