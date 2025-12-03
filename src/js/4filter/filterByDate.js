@@ -6,7 +6,7 @@ function filterByDate(whichArray, whichDate)
 {
     let result = [];
 
-    // vonvert the target to a "Day String" (e.g., "Tue Dec 02 2025")
+    // convert the target to a "Day String" (e.g., "Tue Dec 02 2025")
     // this strips out the time component automatically.
     let targetString = new Date(whichDate).toDateString();
 
