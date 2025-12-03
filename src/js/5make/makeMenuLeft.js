@@ -314,7 +314,7 @@ function makeMenuLeft()
         clickSound();
         //audioPlay('sfx_blip_001', 1.0);
 
-        ge('resultDiv').innerHTML = JSON.stringify(filterByMonthDay(people, '3', '5'));
+        ge('resultDiv').innerHTML = JSON.stringify(filterByMonthDay(people, '03/05'));
     };
     buttonsContainer.append(filterByMonthDayButton);
 

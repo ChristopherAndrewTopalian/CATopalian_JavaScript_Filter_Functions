@@ -1,46 +1,40 @@
 // filterByMonthDay.js
 
+// filterByMonthDay.js
+
 function filterByMonthDay(whichArray, whichDateString)
 {
     let result = [];
 
-    // split input string "MM/DD" into month and day
-    let dateParts = whichDateString.split('/');
-
-    if (dateParts.length !== 2)
+    // parse the input string "MM/DD" into numbers
+    // example: "01/05" becomes 1 and 5. "1/5" also becomes 1 and 5.
+    let parts = whichDateString.split('/');
+    
+    if (parts.length !== 2)
     {
-        // return empty array if input format is incorrect
         return result;
     }
 
-    let whichMonth = dateParts[0];
-    let whichDay = dateParts[1];
+    let targetMonth = parseInt(parts[0], 10);
+    let targetDay   = parseInt(parts[1], 10);
 
     for (let z = 0; z < whichArray.length; z++)
     {
-        // split date & time
-        let parts = whichArray[z].date.split(' ');
+        // convert item data to a Date Object
+        let dateObj = new Date(whichArray[z].date);
 
-        // extract YYYY/MM/DD
-        let datePart = parts[0];
-        let month = datePart.substring(5, 7);
-        let day = datePart.substring(8, 10);
+        // get the Month (0-11), so we add 1 to match the input (1-12)
+        let itemMonth = dateObj.getMonth() + 1;
 
-        if (whichMonth.length === 1)
-        {
-            whichMonth = '0' + whichMonth;
-        }
-        if (whichDay.length === 1)
-        {
-            whichDay = '0' + whichDay;
-        }
+        // get the Day of the Month (1-31)
+        let itemDay = dateObj.getDate();
 
-        if (month === whichMonth && day === whichDay)
+        // compare Numbers
+        if (itemMonth === targetMonth && itemDay === targetDay)
         {
             result.push(whichArray[z]);
         }
     }
-
     return result;
 }
 
