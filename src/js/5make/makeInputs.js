@@ -38,7 +38,7 @@ function makeInputs()
     filterByNameInput.value = 'Melissa';
     filterByNameInput.onkeyup = function()
     {
-        clickSound();
+        inputSound();
         //audioPlay('sfx_blip_001', 1.0);
 
         ge('resultDiv').textContent = JSON.stringify(filterByName(people, filterByNameInput.value));
@@ -71,7 +71,7 @@ function makeInputs()
     filterByDateInput.value = '1983/03/05';
     filterByDateInput.onkeyup = function()
     {
-        clickSound();
+        inputSound();
         //audioPlay('sfx_blip_001', 1.0);
 
         ge('resultDiv').textContent = JSON.stringify(filterByDate(people, filterByDateInput.value));
@@ -103,7 +103,7 @@ function makeInputs()
     filterBeforeDateInput.value = '1983/03/05';
     filterBeforeDateInput.onkeyup = function()
     {
-        clickSound();
+        inputSound();
         //audioPlay('sfx_blip_001', 1.0);
 
         ge('resultDiv').textContent = JSON.stringify(filterBeforeDate(people, filterBeforeDateInput.value));
@@ -135,7 +135,7 @@ function makeInputs()
     filterAfterDateInput.value = '1980/03/01';
     filterAfterDateInput.onkeyup = function()
     {
-        clickSound();
+        inputSound();
         //audioPlay('sfx_blip_001', 1.0);
 
         ge('resultDiv').textContent = JSON.stringify(filterAfterDate(people, filterAfterDateInput.value));
@@ -167,7 +167,7 @@ function makeInputs()
     filterByYearInput.value = '1980';
     filterByYearInput.onkeyup = function()
     {
-        clickSound();
+        inputSound();
         //audioPlay('sfx_blip_001', 1.0);
 
         ge('resultDiv').textContent = JSON.stringify(filterByYear(people, filterByYearInput.value));
@@ -199,7 +199,7 @@ function makeInputs()
     filterByMonthInput.value = '05';
     filterByMonthInput.onkeyup = function()
     {
-        clickSound();
+        inputSound();
         //audioPlay('sfx_blip_001', 1.0);
 
         ge('resultDiv').textContent = JSON.stringify(filterByMonth(people, filterByMonthInput.value));
@@ -231,7 +231,7 @@ function makeInputs()
     filterByYearMonthInput.value = '1983/03';
     filterByYearMonthInput.onkeyup = function()
     {
-        clickSound();
+        inputSound();
         //audioPlay('sfx_blip_001', 1.0);
 
         ge('resultDiv').textContent = JSON.stringify(filterByYearMonth(people, filterByYearMonthInput.value));
@@ -263,7 +263,7 @@ function makeInputs()
     filterByMonthDayInput.value = '03/01';
     filterByMonthDayInput.onkeyup = function()
     {
-        clickSound();
+        inputSound();
         //audioPlay('sfx_blip_001', 1.0);
 
         ge('resultDiv').textContent = JSON.stringify(filterByMonthDay(people, filterByMonthDayInput.value));
@@ -295,7 +295,7 @@ function makeInputs()
     filterByDateTimeInput.value = '1980/03/01 9:30 PM';
     filterByDateTimeInput.onkeyup = function()
     {
-        clickSound();
+        inputSound();
         //audioPlay('sfx_blip_001', 1.0);
 
         ge('resultDiv').textContent = JSON.stringify(filterByDateTime(people, filterByDateTimeInput.value));
