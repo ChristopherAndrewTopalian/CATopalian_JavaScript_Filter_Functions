@@ -40,10 +40,10 @@ function hoverSound()
         300,     // frequency
         100,     // duration
         'triangle',  // waveType
-        0.04,      // volume
+        0.02,      // volume
         0,       // detune
-        0.05,      // attackTime
-        0.05,      // releaseTime
+        0.03,      // attackTime
+        0.03,      // releaseTime
         0.0      // panValue -0.5 is left
     );
 }
