@@ -36,9 +36,12 @@ function makeInputs()
     let filterByNameInput = ce('input');
     filterByNameInput.title = "filterByName";
     filterByNameInput.value = 'Melissa';
-    filterByNameInput.onkeyup = function()
+    filterByNameInput.onkeydown = function()
     {
         inputSound();
+    };
+    filterByNameInput.onkeyup = function()
+    {
         //audioPlay('sfx_blip_001', 1.0);
 
         ge('resultDiv').textContent = JSON.stringify(filterByName(people, filterByNameInput.value));
@@ -69,9 +72,12 @@ function makeInputs()
     filterByDateInput.title = "filterByDate";
     filterByDateInput.title = "filterByDate";
     filterByDateInput.value = '1983/03/05';
-    filterByDateInput.onkeyup = function()
+    filterByDateInput.onkeydown = function()
     {
         inputSound();
+    };
+    filterByDateInput.onkeyup = function()
+    {
         //audioPlay('sfx_blip_001', 1.0);
 
         ge('resultDiv').textContent = JSON.stringify(filterByDate(people, filterByDateInput.value));
@@ -101,9 +107,12 @@ function makeInputs()
     let filterBeforeDateInput = ce('input');
     filterBeforeDateInput.title = "filterBeforeDate";
     filterBeforeDateInput.value = '1983/03/05';
-    filterBeforeDateInput.onkeyup = function()
+    filterBeforeDateInput.onkeydown = function()
     {
         inputSound();
+    };
+    filterBeforeDateInput.onkeyup = function()
+    {
         //audioPlay('sfx_blip_001', 1.0);
 
         ge('resultDiv').textContent = JSON.stringify(filterBeforeDate(people, filterBeforeDateInput.value));
@@ -133,9 +142,12 @@ function makeInputs()
     let filterAfterDateInput = ce('input');
     filterAfterDateInput.title = "filterAfterDate";
     filterAfterDateInput.value = '1980/03/01';
-    filterAfterDateInput.onkeyup = function()
+    filterAfterDateInput.onkeydown = function()
     {
         inputSound();
+    };
+    filterAfterDateInput.onkeyup = function()
+    {
         //audioPlay('sfx_blip_001', 1.0);
 
         ge('resultDiv').textContent = JSON.stringify(filterAfterDate(people, filterAfterDateInput.value));
@@ -165,9 +177,12 @@ function makeInputs()
     let filterByYearInput = ce('input');
     filterByYearInput.title = "filterByYear";
     filterByYearInput.value = '1980';
-    filterByYearInput.onkeyup = function()
+    filterByYearInput.onkeydown = function()
     {
         inputSound();
+    };
+    filterByYearInput.onkeyup = function()
+    {
         //audioPlay('sfx_blip_001', 1.0);
 
         ge('resultDiv').textContent = JSON.stringify(filterByYear(people, filterByYearInput.value));
@@ -229,9 +244,12 @@ function makeInputs()
     let filterByYearMonthInput = ce('input');
     filterByYearMonthInput.title = "filterByYearMonth";
     filterByYearMonthInput.value = '1983/03';
-    filterByYearMonthInput.onkeyup = function()
+    filterByYearMonthInput.onkeydown = function()
     {
         inputSound();
+    };
+    filterByYearMonthInput.onkeyup = function()
+    {
         //audioPlay('sfx_blip_001', 1.0);
 
         ge('resultDiv').textContent = JSON.stringify(filterByYearMonth(people, filterByYearMonthInput.value));
@@ -261,9 +279,12 @@ function makeInputs()
     let filterByMonthDayInput = ce('input');
     filterByMonthDayInput.title = "filterByMonthDay";
     filterByMonthDayInput.value = '03/01';
-    filterByMonthDayInput.onkeyup = function()
+    filterByMonthDayInput.onkeydown = function()
     {
         inputSound();
+    };
+    filterByMonthDayInput.onkeyup = function()
+    {
         //audioPlay('sfx_blip_001', 1.0);
 
         ge('resultDiv').textContent = JSON.stringify(filterByMonthDay(people, filterByMonthDayInput.value));
@@ -293,9 +314,12 @@ function makeInputs()
     let filterByDateTimeInput = ce('input');
     filterByDateTimeInput.title = "filterByDateTime";
     filterByDateTimeInput.value = '1980/03/01 9:30 PM';
-    filterByDateTimeInput.onkeyup = function()
+    filterByDateTimeInput.onkeydown = function()
     {
         inputSound();
+    };
+    filterByDateTimeInput.onkeyup = function()
+    {
         //audioPlay('sfx_blip_001', 1.0);
 
         ge('resultDiv').textContent = JSON.stringify(filterByDateTime(people, filterByDateTimeInput.value));
