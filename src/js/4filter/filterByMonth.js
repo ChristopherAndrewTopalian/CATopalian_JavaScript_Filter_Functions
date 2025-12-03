@@ -1,5 +1,7 @@
 // filterByMonth.js
 
+// filterByMonth.js
+
 function filterByMonth(whichArray, whichMonth)
 {
     let result = [];
@@ -16,6 +18,17 @@ function filterByMonth(whichArray, whichMonth)
 
     return result;
 }
+
+/*
+function filterByMonth(array, targetMonth) {
+    return array.filter(function(person)
+    {
+        let date = new Date(person.date);
+        let month = date.getMonth() + 1; // getMonth() returns 0-11
+        return month === targetMonth;
+    });
+}
+    */
 
 //----//
 

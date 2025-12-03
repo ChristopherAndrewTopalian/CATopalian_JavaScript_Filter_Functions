@@ -1,10 +1,12 @@
 // filterByDate.js
 
+// filterByDate.js
+
 function filterByDate(whichArray, whichDate)
 {
     let result = [];
 
-    // convert the target to a "Day String" (e.g., "Tue Dec 02 2025")
+    // vonvert the target to a "Day String" (e.g., "Tue Dec 02 2025")
     // this strips out the time component automatically.
     let targetString = new Date(whichDate).toDateString();
 

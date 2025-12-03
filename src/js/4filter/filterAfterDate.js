@@ -3,7 +3,7 @@
 function filterAfterDate(whichArray, whichDate)
 {
     let result = [];
-    
+
     // convert the target date
     let targetTime = new Date(whichDate); 
 

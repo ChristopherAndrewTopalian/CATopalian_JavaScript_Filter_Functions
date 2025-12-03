@@ -1,5 +1,7 @@
 // filterBeforeDate.js
 
+// filterBeforeDate.js
+
 function filterBeforeDate(whichArray, whichDate)
 {
     let result = [];
@@ -18,7 +20,6 @@ function filterBeforeDate(whichArray, whichDate)
             result.push(whichArray[z]);
         }
     }
-
     return result;
 }
 
