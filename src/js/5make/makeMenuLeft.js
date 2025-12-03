@@ -220,6 +220,12 @@ function makeMenuLeft()
 
     //-//
 
+    let filterByYearLabel = ce('div');
+    filterByYearLabel.textContent = 'filterByYear(people, "1983")';
+    buttonsContainer.append(filterByYearLabel);
+
+    //-//
+
     // filterByYearButton
     let filterByYearButton = ce('button');
     filterByYearButton.className = 'buttonStyle001';
@@ -243,6 +249,12 @@ function makeMenuLeft()
     //-//
 
     buttonsContainer.append(ce('hr'));
+
+    //-//
+
+    let filterByMonthLabel = ce('div');
+    filterByMonthLabel.textContent = 'filterByMonth(people, "03")';
+    buttonsContainer.append(filterByMonthLabel);
 
     //-//
 
