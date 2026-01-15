@@ -17,7 +17,7 @@ function makeInputs()
     */
     inputContainer.style.position = 'fixed';
     inputContainer.style.left = '10px';
-    inputContainer.style.top = gr('leftMenu_buttonsContainer').bottom + 10;
+    inputContainer.style.top = gr('leftMenu_buttonsContainer').bottom + 10 + 'px';
     inputContainer.style.maxWidth = '220px';
     inputContainer.style.height = '75px';
     inputContainer.style.overflowY = 'scroll';
@@ -342,7 +342,7 @@ function makeInputs()
 //----//
 
 // Dedicated to God the Father
-// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 // https://github.com/ChristopherTopalian
 // https://github.com/ChristopherAndrewTopalian
 // https://sites.google.com/view/CollegeOfScripting

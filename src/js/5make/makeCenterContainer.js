@@ -6,7 +6,7 @@ function makeCenterContainer()
     let centerContainer = ce('div');
     centerContainer.id = 'centerContainer';
     centerContainer.style.position = 'absolute';
-    centerContainer.style.left = gr('leftMenu_buttonsContainer').right + 10;
+    centerContainer.style.left = gr('leftMenu_buttonsContainer').right + 10 + 'px';
     centerContainer.style.top = '10px';
     //centerContainer.style.width = '450px';
     centerContainer.style.overflowX = 'scroll';
@@ -64,7 +64,7 @@ function makeCenterContainer()
 //----//
 
 // Dedicated to God the Father
-// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 // https://github.com/ChristopherTopalian
 // https://github.com/ChristopherAndrewTopalian
 // https://sites.google.com/view/CollegeOfScripting
